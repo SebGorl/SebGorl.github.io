@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang = "pl">
+    
+    <head>
+
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>giarddesign | zadanie rekrutacyjne</title>
+        <link href = "https://img.icons8.com/?size=512&id=BjT5Hec0jWKP&format=png" rel = "icon">
+
+        <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin = "anonymous">
+
+        <link href = "style.css" rel = "stylesheet">
+
+        <link rel = "preconnect" href = "https://fonts.googleapis.com">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+        <link href = "https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Mukta&family=Noto+Sans+SC:wght@300&display=swap" rel = "stylesheet">
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin = "anonymous"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity = "sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin = "anonymous"></script>
+        <script src = "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
+    </head>
+
+    <body>
+    
+        <main>
+
+            <!-- NAVI BAR -->
+            
+            <nav class = "navbar navbar-expand-lg" id = "navbar">
+
+                <div class = "container-fluid">
+
+                    <a class = "navbar-brand me-auto" id = "logo" href = "#"><b>giard</b>design</a>
+                    
+                    <div class = "navbar navbar-collapse" id = "navbar-menu">
+
+                        <ul class = "navbar-nav mb-2 mb-lg-0">
+
+                            <li class = "nav-item dropdown">
+                                <a class = "nav-link dropdown-toggle menu-item" href = "#" role = "button" data-bs-toggle = "dropdown" aria-expanded = "false">
+                                    Oferta
+                                </a>
+                                <ul class = "dropdown-menu">
+                                    <li><a class = "dropdown-item" href = "#offer1">Oferta 1</a></li>
+                                    <li><a class = "dropdown-item" href = "#offer2">Oferta 2</a></li>
+                                    <li><a class = "dropdown-item" href = "#offer3">Oferta 4</a></li>
+                                </ul>
+                            </li>
+
+                            <li class = "nav-item">
+                                <a class = "nav-link menu-item" href = "#about">O firmie</a>
+                            </li>
+
+                            <li class = "nav-item">
+                                <a class = "nav-link menu-item" href = "#projects">Realizacje</a>
+                            </li>
+                      
+                            <li class = "nav-item">
+                                <a class = "nav-link menu-item" href = "#">Kontakt</a>
+                            </li>
+
+                            <li class = "nav-item">
+                                <form class = "d-flex" role = "search">
+                                    <button class = "btn btn-outline-success" id = "search-button" data-bs-toggle = "collapse" data-bs-target = "#searchBar" aria-expanded = "false" aria-controls = "searchBar" type = "button"><img src = "https://img.icons8.com/?size=512&id=132&format=png" width = "20px"/></button>
+                                    <input class = "form-control me-2 collapse collapse-horiznotal" id = "searchBar" type = "search" placeholder = "Search" aria-label = "Search">
+                                </form>
+                            </li>
+
+                        </ul>
+
+                        
+                  
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- INTRO SECTION -->
+
+            <div>
+
+            </div>
+
+            <!-- OFFER SECTION -->
+
+            <div id = "offer">
+
+                <article class = "internal-article" id = "offer-article">
+                    <span class = "section-title-green">Oferta</span>
+                    <h1>Działamy <i>kompleksowo</i></h1>
+                    <p id = "offer-paragraph">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.</p>
+                </article>
+
+                <div class = "horizontal-container">
+
+                    <div class = "offer-item me-auto" id = "offer1">
+                        <img src = "https://img.icons8.com/?size=512&id=86023&format=png" class = "offer-image"/>
+                        <h3>Projekty</h3>
+                        <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                        <a class = "offer-link" href = "#">Dowiedz się więcej &rarr;</a>
+                    </div>
+
+                    <div class = "offer-item me-auto" id = "offer2">
+                        <img src = "https://img.icons8.com/?size=512&id=85130&format=png" class = "offer-image"/>
+                        <h3>Wizualizacje</h3>
+                        <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                        <a class = "offer-link" href = "#">Dowiedz się więcej &rarr;</a>
+                    </div>
+
+                    <div class = "offer-item" id = "offer3">
+                        <img src = "https://img.icons8.com/?size=512&id=U6fz3iUR8SWY&format=png" class = "offer-image"/>
+                        <h3>Realizacje</h3>
+                        <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                        <a class = "offer-link" href = "#">Dowiedz się więcej &rarr;</a>
+                    </div>
+
+                </div>
+
+            </div> 
+
+            <!-- ABOUT SECTION -->
+            <div id = "about">
+                
+                <div id = "about-container">
+
+                    <div id = "edge-image">
+                        <img src = "https://images.unsplash.com/photo-1593006778985-bbe73d64b1e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" id = "about-image"/>
+                    </div>
+    
+                    <div class = "internal-article" id = "about-article">
+                        <span class = "section-title-white">O firmie</span>
+                        <h1>Tworzymy z <i>pasją</i></h1>
+                        <p id = "about-paragraph">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                        <button id = "about-button"><span class = "button-text">Poznaj nas bliżej &rarr;</span></button>
+                    </div>
+
+                </div>
+
+            </div> 
+
+            <!-- PROJECTS SECTION -->
+            <div id = "projects">
+
+                <div class = "internal-article" id = "projects-article">
+                    <span class = "section-title-green">Realizacja</span>
+                    <h1>Nasze <i>projekty</i></h1>
+                </div>
+
+                <div id = "bricks">
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1572085313466-6710de8d7ba3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1544727219-d2ff78f0f148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://plus.unsplash.com/premium_photo-1673141390222-2bd01b623bf3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://plus.unsplash.com/premium_photo-1661963333824-fd020faec5fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1544467168-9cf334a9ce56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1578305035108-429188b9ede6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1595875191230-109db049735f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1605684437254-344f03b1e65c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1603094781627-480821c9040d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1609194059381-8f6d1d489e97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=734&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1591384083861-213b3811d7b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1575368643816-9b7e8ebd1b00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1567131249273-90a34765c19e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1509567852316-09a353a7914a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1566296440929-23b980b70230?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1580244103627-ae93c55e2b32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://plus.unsplash.com/premium_photo-1678836292816-6dbd1b8608f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1601823984263-b87b59798b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1586375300773-8384e3e4916f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1577537664934-1b8ccf7880b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1612143398944-0fc4e9671f96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1559320887-dfd4f5f08c55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1613159742893-0896d691fa4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"/></div>
+                    <div class = "masonry-item"><img src = "https://images.unsplash.com/photo-1601183035692-2190a74ebe2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1468&q=80"/></div>
+                </div>
+
+                <script>
+
+                    window.onload = () =>
+                    {
+                        const grid = document.getElementById("bricks");
+
+                        const masonry = new Masonry(grid, {gutter: 10});
+                    };
+
+                </script>
+
+            </div>
+
+            <!-- insta SECTION -->
+            <div></div> 
+
+            <!-- FOOTER -->
+            <footer></footer> 
+
+        </main>
+
+
+
+    </body>
+
+</html>

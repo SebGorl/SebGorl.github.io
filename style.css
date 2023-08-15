@@ -1,0 +1,233 @@
+/* Whole Site Classes */
+
+.internal-article
+{
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+span.section-title-green
+{
+    font-size: x-small;
+    color: #1B5B31;
+}
+
+span.section-title-white
+{
+    font-size: x-small;
+    color: #F5F0EC;
+}
+
+.horizontal-container
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+}
+
+/* NAVI BAR */
+
+#navbar
+{
+    padding-top: 24px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 24px;
+    background-color: white;
+    color: black;
+}
+
+#logo
+{
+    font-family: 'Karla', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+#navbar-menu
+{
+    flex-grow:0;
+}
+
+a.menu-item
+{
+    color: black;
+}
+
+#search-button
+{
+    border: none;
+}
+
+#search-button:hover
+{
+    background-color: white;
+}
+
+/* OFFERS */
+
+#offer
+{
+    width: 100%;
+    background-color: #F5F0EC;
+    padding-bottom: 9%;
+}
+
+#offer-article
+{
+    padding-left: 8%;
+}
+
+#offer-paragraph
+{
+    width: 45%;
+}
+
+.offer-item
+{
+    margin-top: 3%;
+    min-width: 290px;
+    width: 28%;
+    background-color: white;
+    padding: 40px 48px 40px 48px;
+    border-radius: 35px;
+}
+
+.offer-image
+{
+    width: 15%;
+    margin-bottom: 3%
+}
+
+a.offer-link
+{
+    margin-top: 5%;
+    text-decoration: underline;
+    color: #1B5B31;
+}
+
+@keyframes shake
+{
+    0%
+    { 
+        transform: rotate(2deg);
+    }
+    50%
+    {
+        transform: rotate(-3deg);
+    }
+    70%
+    {
+        transform: rotate(3deg);
+    }
+  
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.offer-item:hover
+{
+    animation: shake 500ms ease-in-out forwards;
+}
+
+/* ABOUTS */
+
+#about
+{
+    background-color: #1B5B31;
+    width: 100%;
+}
+
+#about-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#edge-image
+{
+    flex: 1;
+    max-width: 45%;
+    position: relative;
+}
+
+#about-image
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px)
+{
+    #about-container
+    {
+        flex-direction: column;
+    }
+
+    #edge-image,
+    #about-article
+    {
+        max-width: 100%;
+    }
+}
+
+#about-article
+{
+    flex: 1;
+    max-width: 50%;
+    padding-top: 3%;
+    padding-bottom: 0%;
+    padding-left: 8%;
+    color: #F5F0EC;
+}
+
+#about-paragraph
+{
+    width: 75%;
+}
+
+#about-button
+{
+    background-color: transparent;
+    border: #F5F0EC solid 1px;
+    border-radius: 30px;
+    color: #F5F0EC;
+    padding: 15px 22.5px 15px 22.5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* PROJECTS */
+
+#projects
+{
+    background-color: #DCC1AB;
+    color: #111111;
+    padding-left: 8%;
+    padding-bottom: 9%;
+}
+
+#bricks
+{
+    height: 80%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.masonry-item
+{
+    min-width: 200px;
+    width: 20%;
+    max-width: 300px;
+}
+
+.masonry-item img
+{
+    width: 100%;
+    margin: 5px;
+}
