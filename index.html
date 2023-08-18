@@ -12,9 +12,9 @@
 
         <link href = "style.css" rel = "stylesheet">
 
-        <link rel = "preconnect" href = "https://fonts.googleapis.com">
-        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-        <link href = "https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Mukta&family=Noto+Sans+SC:wght@300&display=swap" rel = "stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Inter:wght@300&family=Karla:wght@300&family=Sarabun:wght@200&display=swap" rel="stylesheet">
 
         <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin = "anonymous"></script>
         <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity = "sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin = "anonymous"></script>
@@ -58,7 +58,7 @@
                             </li>
                       
                             <li class = "nav-item">
-                                <a class = "nav-link menu-item" href = "#">Kontakt</a>
+                                <a class = "nav-link menu-item" href = "#footer-button">Kontakt</a>
                             </li>
 
                             <li class = "nav-item">
@@ -80,7 +80,33 @@
 
             <!-- INTRO SECTION -->
 
-            <div>
+            <div id = "intro">
+
+                
+
+                    <div class = "internal-article" id = "intro-article">
+
+                        <h1 id = "intro-header">Nowoczesna aranżacja Twojego ogrodu</h1>
+                        <p id = "intro-paragraph">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+
+                        <div class = "horizontal-container" id = "intro-buttons">
+
+                            <div class = "me-auto"><button class = "internal-button auto-me" id = "intro-contact">Skontaktuj się z nami</button></div>
+                            <div><button class = "internal-button" id = "intro-gallery">Zobacz nasze realizacje &darr;</button></div>
+
+                            <script src = "scripts/gallery_scroll.js"></script>
+
+                        </div>
+                    </div>
+
+                    <div id = "intro-edge">
+                        <img src = "https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/>
+                    </div>
+
+                <div class = "horizontal-container" id = "slider-buttons">
+                    <div class = "slide-button">&larr;</div>
+                    <div class = "slide-button">&rarr;</div>
+                </div>
 
             </div>
 
@@ -123,10 +149,8 @@
 
             <!-- ABOUT SECTION -->
             <div id = "about">
-                
-                <div id = "about-container">
 
-                    <div id = "edge-image">
+                    <div id = "about-image">
                         <img src = "https://images.unsplash.com/photo-1593006778985-bbe73d64b1e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" id = "about-image"/>
                     </div>
     
@@ -136,8 +160,6 @@
                         <p id = "about-paragraph">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
                         <button class = "internal-button" id = "about-button"><span class = "button-text">Poznaj nas bliżej &rarr;</span></button>
                     </div>
-
-                </div>
 
             </div> 
 
@@ -184,29 +206,7 @@
 
                 <button class = "internal-button" id = "gallery-button">Rozwiń &darr;</button>
 
-                    <script>
-
-                        document.getElementById('gallery-button').onclick = function()
-                        {
-
-                            var container = document.getElementById("container");
-                            var fadeout = document.getElementById('fadeout');
-                            
-                            if (fadeout.style.display !== 'none')
-                            {
-                                fadeout.style.display = 'none';
-                                container.style.height = 'auto';
-                                document.getElementById('gallery-button').innerText = 'Zwiń ↑';
-                            }
-                            else
-                            {
-                                container.style.height = '';
-                                fadeout.style.display = 'block';
-                                document.getElementById('gallery-button').innerText = 'Rozwiń ↓';
-                            }
-                        };
-
-                    </script>
+                    <script src = "scripts/gallery_use.js"></script>
 
                 <script>
 
@@ -245,7 +245,7 @@
                 <div class = "horizontal-container">
 
                     <p class = "me-auto" id = "logo-small"><b>giard</b>design</p>
-                    <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <p id = "paragraph-to-button">Daj znać, co możemy dla Ciebie zrobić!</p>
                     <button class = "internal-button" id = "footer-button">Skontaktuj się z nami</button>
 
                 </div>
@@ -266,8 +266,8 @@
                 <div id = "footer-info">
 
                     <div class = "horizontal-container">
-                        <p class = "me-auto">Witryna przygodowana w ramach procesu rekrutacyjnego dla adRespect.</p>
-                        <p>design made by</p>
+                        <p class = "paragraph-to-image me-auto">Witryna przygodowana w ramach procesu rekrutacyjnego dla adRespect.</p>
+                        <p class = "paragraph-to-image">design made by</p>
                         <img src = "images/adRespect-logo.svg" id = "footer-logo"/>
                     </div>
 
