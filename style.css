@@ -115,7 +115,7 @@ a.menu-item
     white-space: nowrap;
     display: flex;
     scroll-behavior: smooth;
-    touch-action: none;
+    touch-action: pan-y;
 }
 
 #slider::-webkit-scrollbar
