@@ -115,6 +115,7 @@ a.menu-item
     white-space: nowrap;
     display: flex;
     scroll-behavior: smooth;
+    touch-action: none;
 }
 
 #slider::-webkit-scrollbar
@@ -192,6 +193,42 @@ a.menu-item
     border: #1B5B31 solid 1px;
     background-color: transparent;
     color: #1B5B31;
+}
+
+@media (max-width: 600px) {
+    .slide
+    {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .intro-article
+    {
+        width:100vw;
+        height: auto;
+    }
+
+    .intro-edge
+    {
+        max-height: 300px;
+        width: 100vw;
+    }
+  
+    .intro-edge img
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+  
+    .intro-article h1
+    {
+        width: 90%;
+    }
+
+    .intro-paragraph
+    {
+        width: 80%;
+    }
 }
 
 .slide-button
@@ -392,6 +429,7 @@ a.offer-link
     min-width: 200px;
     width: 20%;
     max-width: 300px;
+    cursor: pointer;
 }
 
 .masonry-item img
@@ -421,6 +459,56 @@ a.offer-link
     transform: translateX(-50%);
     bottom: 20px;
     z-index: 1;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#popup .horizontal-container
+{
+    margin-right: 0;
+}
+
+#popup-image {
+    max-width: 70%;
+}
+
+#close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    min-height: 100%;
+    width: 10%;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-button:hover
+{
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* INSTA */
