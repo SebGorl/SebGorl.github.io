@@ -1,9 +1,9 @@
-const bricks = document.querySelectorAll('.masonry-item');
-const popup = document.getElementById('popup');
-const popupImage = document.getElementById('popup-image');
-const closeButton = document.getElementById('close-button');
-const prevButton = document.getElementById('prev-button');
-const nextButton = document.getElementById('next-button');
+const bricks = document.querySelectorAll(".masonry-item");
+const popup = document.getElementById("popup");
+const popupImage = document.getElementById("popup-image");
+const closeButton = document.getElementById("close-button");
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
 
 const imageUrls = 
 [
@@ -41,13 +41,13 @@ bricks.forEach((brick, index) =>
   {
     popupImage.src = imageUrls[index];
     currentImageIndex = index;
-    popup.style.display = 'flex';
+    popup.style.display = "flex";
   };
 });
 
 closeButton.onclick = function() 
 {
-  popup.style.display = 'none';
+  popup.style.display = "none";
 };
 
 prevButton.onclick = function() 
